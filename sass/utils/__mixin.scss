@@ -1,0 +1,21 @@
+@mixin Centerdflex($type) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin fonts($fw, $fz, $lh, $ls, $tt: false) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+
+  @if $tt {
+    text-transform: $tt;
+  }
+}
+@mixin display($ls, $ds, $ai) {
+  list-style: $ls;
+  display: $ds;
+  align-items: $ai;
+}

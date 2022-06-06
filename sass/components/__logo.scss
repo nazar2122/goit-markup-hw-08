@@ -1,0 +1,24 @@
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: "Raleway";
+  @include fonts(700, 26px, 1.19, 0.03em);
+  color: var(--primary-text-color);
+  text-decoration: none;
+
+  .page-header__logo--accent {
+    color: var(--primary-touch-color);
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  @include fonts(700, 26px, 1.19, 0.03em);
+  color: var(--primary-touch-color);
+  text-decoration: none;
+  .logo-two {
+    color: var(--primary-button-text-color);
+  }
+}

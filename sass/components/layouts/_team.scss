@@ -1,0 +1,78 @@
+/* команда */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: block;
+  flex-wrap: wrap;
+  background-color: var(--primary-background-color);
+  .team__title {
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+    text-align: center;
+
+    @include fonts(700, 36px, 1.16, 0.03em);
+  }
+  .team__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__group {
+    width: calc((100% - 90px) / 4);
+    margin-left: 30px;
+    background: var(--primary-button-text-color);
+    list-style: none;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team__group:nth-child(1) {
+    margin-left: 0px;
+  }
+  .team__text {
+    padding: 30px 30px;
+    box-sizing: border-box;
+    text-align: center;
+
+    .team__name {
+      margin-bottom: 10px;
+      color: var(--primary-text-color);
+      font-style: normal;
+
+      @include fonts(500, 16px, 1.18, 0.03em);
+    }
+
+    .team__profession {
+      margin-bottom: 16px;
+
+      @include fonts(400, 16px, 1.18, 0.03em);
+      color: var(--primary-text-p-color);
+    }
+  }
+}
+
+.team-social {
+  @include display(none, flex, none);
+
+  &__item {
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  &__item:first-child {
+    margin-left: 0px;
+  }
+  &__link {
+    transition: var(--transition);
+    border-radius: 50%;
+    @include Centerdflex(flex);
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--primary-touch-color);
+    fill: var(--primary-button-text-color);
+  }
+}

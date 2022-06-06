@@ -1,0 +1,99 @@
+.page-header {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  min-height: 80px;
+  align-items: center;
+  background-color: var(--primary-button-text-color);
+}
+
+.container.page-header--global {
+  @include display(none, flex, center);
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__site-nav {
+  @include display(none, flex, center);
+}
+
+.nav-link__header {
+  margin-left: 50px;
+}
+
+.nav-link__header:first-child {
+  margin-left: 0px;
+}
+
+.nav-link {
+  margin-left: 93px;
+  @include display(none, flex, center);
+}
+
+.nav-link__navigation.nav-link--current {
+  color: var(--primary-touch-color);
+}
+
+.nav-link__header.nav-link--current::after {
+  content: "";
+  background-color: var(--primary-touch-color);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  display: block;
+}
+
+.nav-link__navigation {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  color: var(--primary-text-color);
+  font-style: normal;
+  @include fonts(500, 14px, 1.14, 0.02em);
+  transition: var(--transition);
+  &:focus,
+  &:hover {
+    color: var(--primary-touch-color);
+  }
+}
+
+.mail {
+  @include display(none, flex, none);
+  margin-left: auto;
+
+  &__namb {
+    margin-left: 30px;
+    &__namb:first-child {
+      margin-left: 0px;
+    }
+  }
+  &__link {
+    @include display(none, flex, center);
+    @include fonts(500, 14px, 1.14, 0.02em);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-text-p-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: var(--transition);
+    &:focus,
+    &:hover {
+      color: var(--primary-touch-color);
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    background-size: auto;
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+  }
+}

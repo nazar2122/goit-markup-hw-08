@@ -1,0 +1,37 @@
+.company {
+  padding-bottom: 94px;
+  &__title {
+    margin-bottom: 50px;
+    color: var(--primary-text-color);
+
+    @include fonts(700, 36px, 1.16, 0.03em);
+    text-align: center;
+  }
+}
+
+.company__item {
+  @include display(none, flex, none);
+
+  .company__group {
+    margin-left: 30px;
+    position: relative;
+  }
+  .company__group:first-child {
+    margin-left: 0px;
+  }
+  .company__tumb {
+    position: absolute;
+
+    @include Centerdflex(flex);
+
+    @include fonts(700, 14px, 1.14, 0.03em, uppercase);
+
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    color: var(--primary-button-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

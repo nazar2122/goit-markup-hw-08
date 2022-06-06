@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- шапка профиля -->
+    <!--логотип сайту-->
+    <header class="page-header">
+      <div class="container page-header--global">
+        <nav class="page-header__site-nav">
+          <a href="index.html" class="page-header__logo"
+            ><span class="page-header__logo--accent">Web</span>Studio</a
+          >
+          <!--навігація на сторінки-->
+          <ul class="nav-link">
+            <li class="nav-link__header">
+              <a class="nav-link__navigation" href="index.html">Студия</a>
+            </li>
+
+            <li class="nav-link__header nav-link--current">
+              <a
+                class="nav-link__navigation nav-link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+
+            <li class="nav-link__header">
+              <a class="nav-link__navigation" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mail">
+          <li class="mail__namb">
+            <a class="mail__link" href="emailto:info@devstudio.com">
+              <svg class="mail__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="mail__namb">
+            <a class="mail__link" href="tel:+380961111111">
+              <svg class="mail__icon" width="10px" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- КНОПКИ -->
+      <section class="item-keys">
+        <div class="container">
+          <h1 class="item-keys__shadow">gallery</h1>
+          <ul class="item-keys__btn">
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">Все</button>
+            </li>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">Дизайн</button>
+            </li>
+            <li class="item-keys__buttons-portfolio">
+              <button class="item-keys__buttons" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <!-- картинки -->
+
+          <ul class="items">
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">Технокряк</h2>
+                  <p class="items-lable__place">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.2.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="items-lable__place">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="items-lable__place">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.4.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
+                  <p class="items-lable__place">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.5.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="items-lable__place">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.6.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="items-lable__place">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.7.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="items-lable__place">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.8.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="items-lable__place">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="items__list">
+              <a class="items__link" href="">
+                <div class="items__tumb-portfolio">
+                  <img
+                    src="./images/img.9.jpg"
+                    alt="Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                  <ul class="items__tumb">
+                    <li>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="items-lable">
+                  <h2 class="items-lable__project" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="items-lable__place">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer--burnt">
+        <div class="footer__box">
+          <a href="/index.html" class="footer__logo"
+            >Web<span class="logo-two">Studio</span></a
+          >
+          <address>
+            <ul class="footer__nav">
+              <li class="footer__map">
+                <a
+                  class="footer__googl"
+                  href="https://goo.gl/maps/qnMu7uc59vrPXKZr5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer__connection">
+                <a class="footer__contakt" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer__connection">
+                <a class="footer__contakt" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h2 class="footer-social__text">присоединяйтесь</h2>
+          <ul class="footer-social__meta">
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href="">
+                <svg width="20" height="16.25">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="footer-social__link" href=""
+                ><svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-sub">
+          <h2 class="footer-sub__tekst">Подпишитесь на рассылку</h2>
+          <form class="footer-sub__subscribe">
+            <input
+              class="footer-sub__form"
+              type="email"
+              name="user-name"
+              placeholder="E-mail"
+            />
+            <button class="footer-sub__btn" type="submit">
+              <span class="footer-sub__img-button"
+                >Подписаться
+                <svg class="footer-sub__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

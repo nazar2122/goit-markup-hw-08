@@ -1,0 +1,65 @@
+%sub-btn {
+  flex-direction: column;
+  left: 40px;
+  transition: var(--transition);
+  border-width: 0px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  font-family: inherit;
+  background-color: var(--primary-touch-color);
+  color: var(--primary-button-text-color);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  margin: 0;
+}
+%hero-btn {
+  transition: var(--transition);
+  border-width: 0px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+  font-family: inherit;
+  background-color: var(--primary-touch-color);
+  color: var(--primary-button-text-color);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+%portfolio-btn {
+  transition: var(--transition);
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  min-width: 73px;
+  text-align: center;
+  font-family: inherit;
+  border: none;
+  background-color: var(--primary-background-color);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+%btn-close {
+  top: 8px;
+  right: 8px;
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: var(--primary-button-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  border-radius: 50%;
+}

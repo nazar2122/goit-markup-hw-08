@@ -1,0 +1,47 @@
+body {
+    margin-top: 80px;
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* основний контейнер */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* зкритий текс */
+.item-keys__shadow {
+    display: none;
+    text-align: center;
+}
+

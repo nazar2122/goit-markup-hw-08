@@ -1,47 +1,65 @@
 body {
-    margin-top: 80px;
-    font-family: Roboto, sans-serif;
-    color: var(--primary-text-color);
+  margin-top: 80px;
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
 }
-
+main {
+  display: block;
+}
 ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin: 0px;
+  margin: 0px;
 }
 
 p {
-    margin: 0px;
+  margin: 0px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* основний контейнер */
 .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  }
 }
 
 /* зкритий текс */
 .item-keys__shadow {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 }
-

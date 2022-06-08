@@ -63,3 +63,6 @@
   transition: var(--transition);
   border-radius: 50%;
 }
+%grid-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}

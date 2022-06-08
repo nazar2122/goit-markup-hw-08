@@ -1,21 +1,43 @@
 .section-feauture {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .feauture {
+  flex-wrap: wrap;
+  gap: var(--indent);
   @include display(none, flex, none);
 
   &__item {
-    margin-left: 30px;
+    @media screen and (min-width: 480px) {
+      --items: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 4;
+    }
+
+    @extend %grid-item;
   }
-  &__item:first-child {
-    margin-left: 0px;
-  }
+
   &__group {
     @include Centerdflex(flex);
-
-    width: 270px;
     height: 120px;
     margin-left: 30px;
     margin-bottom: 30px;
@@ -27,6 +49,17 @@
     margin-left: 0px;
   }
   &__caption {
+    @media screen and (min-width: 480px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+
     margin-bottom: 10px;
     font-style: normal;
 
@@ -34,8 +67,6 @@
     color: var(--primary-text-color);
   }
   &__text {
-    width: 270px;
-
     @include fonts(400, 14px, 1.71, 0.03em);
     color: var(--primary-text-p-color);
   }

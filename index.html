@@ -19,67 +19,130 @@
   </head>
   <body>
     <!--логотип сайту-->
-    <!-- <header class="page-header"> -->
-    <!-- <div class="container page-header--global">
-        <nav class="page-header__site-nav">
-          <a href="index.html" class="page-header__logo"
-            ><span class="page-header__logo--accent">Web</span>Studio</a
-          > -->
-    <!--навігація на сторінки-->
-    <!-- <ul class="nav-link">
-            <li class="nav-link__header nav-link--current">
-              <a
-                class="nav-link__navigation nav-link--current"
-                href="index.html"
-                >Студия</a
-              >
-            </li>
+    <header class="page-header">
+      <div class="container page-header--global">
+        <div class="close_image">
+          <nav class="page-header__site-nav">
+            <a href="index.html" class="page-header__logo"
+              ><span class="page-header__logo--accent">Web</span>Studio</a
+            >
 
-            <li class="nav-link__header">
-              <a class="nav-link__navigation" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
+            <!--навігація на сторінки-->
 
-            <li class="nav-link__header">
-              <a class="nav-link__navigation" href="">Контакты</a>
+            <ul class="nav-link">
+              <li class="nav-link__header nav-link--current">
+                <a
+                  class="nav-link__navigation nav-link--current"
+                  href="index.html"
+                  >Студия</a
+                >
+              </li>
+
+              <li class="nav-link__header">
+                <a class="nav-link__navigation" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+
+              <li class="nav-link__header">
+                <a class="nav-link__navigation" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mail">
+            <li class="mail__namb">
+              <a class="mail__link" href="emailto:info@devstudio.com">
+                <svg class="mail__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mail__namb">
+              <a class="mail__link" href="tel:+380961111111">
+                <svg class="mail__icon" width="10px" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="mail">
-          <li class="mail__namb">
-            <a class="mail__link" href="emailto:info@devstudio.com">
-              <svg class="mail__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
+        </div>
+        <!-- мобільне меню -->
+        <div class="mobile-menu">
+          <a href="index.html" class="page-header__logo"
+            ><span class="page-header__logo--accent">Web</span>Studio</a
+          >
+          <div class="btn-mobile">
+            <button data-modal-open1 class="btn-mobile__open" type="button">
+              <svg class="modal__icon-mobile" width="40px" height="40">
+                <use href="./images/icons.svg#icon-menu_40px-2"></use>
               </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="mail__namb">
-            <a class="mail__link" href="tel:+380961111111">
-              <svg class="mail__icon" width="10px" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            </button>
+          </div>
+          <div data-modal3 class="backdrop is-hidden4">
+            <div class="mod">
+              <button data-modal-close2 class="btn-mobile__open" type="button">
+                <svg class="modal__icon-mobile" width="40px" height="40">
+                  <use href="./images/icons.svg#icon-closeD_40px-1"></use>
+                </svg>
+              </button>
+              <ul class="mobile">
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Студия </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__contatcts">
+                <li class="mobile-menu__item">
+                  <a href="tel:+380961111111" class="mobile-menu__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__socials">
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Instagram </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Twitter</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">Facebook</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--заголовок-->
 
-      <!-- <section class="hero"> -->
-      <!-- <div class="container">
+      <section class="hero">
+        <div class="container">
           <h1 class="hero__title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
           <button data-modal-open class="hero__button-one" name="button">
             Заказать услугу
-          </button> -->
-      <!-- </div> -->
-      <!-- модалка -->
-      <!-- <div data-modal class="backdrop is-hidden">
+          </button>
+        </div>
+        <!-- модалка -->
+        <div data-modal class="backdrop is-hidden">
           <div class="modal">
             <button data-modal-close class="modal__script" type="button">
               <svg class="modal__icon-close" width="11px" height="11">
@@ -156,8 +219,8 @@
               </div>
             </form>
           </div>
-        </div> -->
-      <!-- </section> -->
+        </div>
+      </section>
 
       <!--особливості-->
       <section class="section-feauture">
@@ -564,6 +627,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

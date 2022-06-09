@@ -5,39 +5,64 @@
   display: block;
   flex-wrap: wrap;
   .item-keys__btn {
-    @include display(none, flex, none);
+    margin-bottom: 14px;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 43px;
+    }
 
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-  .item-keys__buttons-portfolio {
-    margin-left: 8px;
-  }
-  &__buttons-portfolio:first-child {
-    margin-left: 0px;
+    @media screen and (min-width: 768px) {
+      @include display(none, flex, none);
+
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 34px;
+    }
+    .item-keys__buttons-portfolio {
+      @media screen and (min-width: 480px) {
+        margin-left: 8px;
+        margin-bottom: 21px;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-left: 8px;
+      }
+    }
+    &__buttons-portfolio:first-child {
+      margin-left: 0px;
+    }
   }
 }
 
 .items {
   @include display(none, flex, none);
-
+  gap: 30px;
   flex-wrap: wrap;
   &__list {
+    @media screen and (min-width: 480px) {
+      --items: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+      --items: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      --items: 3;
+    }
+    @extend %grid-item;
     transition: var(--transition);
     cursor: pointer;
     border: 1px solid #eeeeee;
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
+
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-  }
-
-  &__list:nth-child(3n) {
-    margin-right: 0px;
   }
 
   &__tumb-portfolio {

@@ -1,3 +1,23 @@
+.close_image {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    display: flex;
+
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  display: none;
+}
+
 .page-header {
   z-index: 2;
   position: fixed;
@@ -30,6 +50,13 @@
 }
 
 .nav-link {
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
   margin-left: 93px;
   @include display(none, flex, center);
 }
@@ -48,6 +75,13 @@
 }
 
 .nav-link__navigation {
+  @media screen and (min-width: 768px) {
+    @include fonts(500, 14px, 1.14, 0.02em);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(500, 14px, 1.14, 0.02em);
+  }
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -62,6 +96,18 @@
 }
 
 .mail {
+  @media screen and (min-width: 768px) {
+    @include display(none, flex, none);
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include display(none, flex, none);
+    margin-left: auto;
+    flex-direction: row;
+    margin-left: 305px;
+  }
   @include display(none, flex, none);
   margin-left: auto;
 
@@ -73,10 +119,19 @@
   }
   &__link {
     @include display(none, flex, center);
+
     @include fonts(500, 14px, 1.14, 0.02em);
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      @include fonts(500, 12px, 1.16, 0.02em);
+      padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
     font-style: normal;
     text-decoration: none;
     color: var(--primary-text-p-color);

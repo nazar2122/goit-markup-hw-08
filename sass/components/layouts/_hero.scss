@@ -23,7 +23,12 @@
     margin-bottom: 30px;
     text-align: center;
 
-    @include fonts(900, 44px, 1.36, 0.06em, uppercase);
+    @media screen and (min-width: 480px) {
+      @include fonts(900, 26px, 1.61, 0.06em, uppercase);
+    }
+    @media screen and (min-width: 1200px) {
+      @include fonts(900, 44px, 1.36, 0.06em, uppercase);
+    }
   }
   &__button-one {
     @extend %hero-btn;

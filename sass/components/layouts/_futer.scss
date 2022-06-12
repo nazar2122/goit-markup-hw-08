@@ -33,6 +33,7 @@
   text-decoration: none;
 }
 .footer--burnt {
+  align-items: center;
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 480px) {
@@ -49,7 +50,7 @@
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
-  @include display(none, flex, baseline);
+  @include display(none, flex, none);
 }
 .footer__map {
   margin-bottom: 9px;

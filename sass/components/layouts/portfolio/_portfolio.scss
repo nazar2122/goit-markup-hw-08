@@ -4,6 +4,14 @@
   padding-bottom: 94px;
   display: block;
   flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .item-keys__btn {
     margin-bottom: 14px;
     @media screen and (min-width: 480px) {
@@ -43,14 +51,17 @@
   flex-wrap: wrap;
   &__list {
     @media screen and (min-width: 480px) {
+      --indent: 0px;
       --items: 1;
     }
 
     @media screen and (min-width: 768px) {
+      --indent: 30px;
       --items: 2;
     }
 
     @media screen and (min-width: 1200px) {
+      --indent: 30px;
       --items: 3;
     }
     @extend %grid-item;

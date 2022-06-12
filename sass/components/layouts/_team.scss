@@ -28,7 +28,8 @@
   }
   .team__group {
     @media screen and (min-width: 480px) {
-      width: calc((100% - 30px) / 1);
+      width: calc((100% - 0px) / 1);
+      margin-left: 0px;
     }
 
     @media screen and (min-width: 768px) {

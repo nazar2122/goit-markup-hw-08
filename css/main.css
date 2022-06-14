@@ -289,7 +289,6 @@ img {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
-  margin-left: 100px;
   border: none;
   background-color: var(--primary-button-text-color);
 }

@@ -1,7 +1,7 @@
 /* кнопки */
 .item-keys {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: block;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
@@ -12,19 +12,24 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .item-keys__buttons-portfolio:nth-child(-n + 3) {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 21px;
+    }
+  }
   .item-keys__btn {
-    margin-bottom: 14px;
+    margin-bottom: 34px;
     @media screen and (min-width: 480px) {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 43px;
+      margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
       @include display(none, flex, none);
 
       justify-content: center;
-      margin-bottom: 14px;
+      margin-bottom: 34px;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 34px;
@@ -32,11 +37,14 @@
     .item-keys__buttons-portfolio {
       @media screen and (min-width: 480px) {
         margin-left: 8px;
-        margin-bottom: 21px;
       }
 
       @media screen and (min-width: 768px) {
         margin-left: 8px;
+        margin-bottom: 0px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
       }
     }
     &__buttons-portfolio:first-child {

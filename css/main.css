@@ -640,6 +640,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .mail__namb:first-child {
+    margin-bottom: 0px;
     margin-left: 0px;
   }
 }

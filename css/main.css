@@ -633,6 +633,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .mail__namb:first-child {
+    margin-bottom: 10px;
     margin-left: 30px;
   }
 }
@@ -666,7 +667,6 @@ img {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    padding-bottom: 10px;
   }
 }
 

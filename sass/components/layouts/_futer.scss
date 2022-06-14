@@ -13,9 +13,12 @@
   padding-bottom: 60px;
 }
 .footer__box {
-  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
     text-align: start;
+    justify-content: space-around;
   }
 }
 .logo-two {
@@ -42,6 +45,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
@@ -94,12 +98,12 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-left: auto;
     text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
     text-align: left;
+    margin-bottom: 0px;
   }
   padding-top: 12px;
 

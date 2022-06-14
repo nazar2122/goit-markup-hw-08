@@ -42,7 +42,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("./images/header/Header-phone-1x.jpg");
+    url("../images/header/Header-phone-1x.jpg");
   @media screen and (max-width: 480px) {
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("./images/header/Header-phone@2x.jpg");
+        url("../images/header/Header-phone@2x.jpg");
     }
   }
   @media screen and (min-width: 768px) {
@@ -61,7 +61,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("./images/header/Header-tablet-1x.jpg");
+      url("../images/header/Header-tablet-1x.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -71,7 +71,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("./images/header/Header-tablet@2x.jpg");
+        url("../images/header/Header-tablet@2x.jpg");
     }
   }
 
@@ -81,7 +81,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("./images/header/header-notebok-1x.jpg");
+      url("../images/header/header-notebok-1x.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -91,7 +91,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("./images/header/Header-notebok@2x.jpg");
+        url("../images/header/Header-notebok@2x.jpg");
     }
   }
   &__title {
